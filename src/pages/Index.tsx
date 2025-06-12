@@ -40,23 +40,6 @@ const Index = () => {
           <h1 className="weather-title">Previsor de Tempo</h1>
 
           <form className="weather-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="location">Localização:</label>
-              <input type="text" id="location" name="location" className="form-input" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="pressure">Pressão Atmosférica (hPa):</label>
-              <input
-                type="number"
-                id="pressure"
-                name="pressure"
-                className="form-input"
-                min="800"
-                max="1100"
-                required
-              />
-            </div>
 
             <div className="form-group">
               <label htmlFor="humidity">Umidade Relativa (%):</label>
@@ -70,6 +53,19 @@ const Index = () => {
                 required
               />
             </div>
+            <div className="form-group">
+              <label htmlFor="pressure">Pressão Atmosférica (hPa):</label>
+              <input
+                type="number"
+                id="pressure"
+                name="pressure"
+                className="form-input"
+                min="800"
+                max="1100"
+                required
+              />
+            </div>
+
 
             <div className="form-group">
               <label htmlFor="windSpeed">Velocidade do Vento (km/h):</label>
